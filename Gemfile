@@ -32,7 +32,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '~> 4.7', '>= 4.7.3'
 # Use bootstrap to make responsive pages
-gem 'bootstrap', '~> 4.5', '>= 4.5.3'
+# gem 'bootstrap', '~> 4.5', '>= 4.5.3'
+gem 'bulma-rails', '~> 0.9.0'
 gem 'font-awesome-rails'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'simple_form'

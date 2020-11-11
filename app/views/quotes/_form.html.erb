@@ -1,22 +1,10 @@
-<%= form_with(model: quote, local: true) do |form| %>
-  <% if quote.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
-
-      <ul>
-        <% quote.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+<%=  simple_form_for(@quote) do |f| %>
+<%= f.error_notification %>
   <div class="field">
-    <%= form.label :quote %>
-    <%= form.text_area :quote %>
+    <div class="control">
+      <%= f.input :quote, label: "Inspire someone with a quote", input_html: { class: "textarea"}, wrapper: false, 
+      label_html: {class: "label"}, placeholder: "Write a Quote...", autofocus: true %>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= f.button :submit, class: "button is-info" %>
 <% end %>
