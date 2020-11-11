@@ -12,8 +12,35 @@
   </head>
 
   <body>
-  <div class="container">
-    <%= yield %>
-  </div>
+    <nav class="navbar bg-primary">
+       <div class="navbar-brand">
+          <%= link_to root_path, class: "navbar-item" do %>
+            <h1 class="title text-light">Inspire</h1>
+          <% end %>
+          <div class="navbar-burger burger" data-target="navbarExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+    </nav>
+    <% if flash[:notice] %>
+      <div class="notification is-primary global-notification">
+        <p class="notice"><%= notice %></p>
+      </div>
+      <% end %>
+
+      <% if flash[:alert] %>
+      <div class="notification is-danger global-notification">
+        <p class="alert"><%= alert %></p>
+      </div>
+      <% end %>
+    <div class="container">
+          <%= yield %>
+    </div>
+    <footer class="footer">
+
+    </footer>
   </body>
 </html>

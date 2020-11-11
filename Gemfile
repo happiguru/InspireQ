@@ -5,12 +5,13 @@ ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
-# Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use bcrypt as the app user authentication checker
 gem 'bcrypt', '~> 3.1.7'
+# Use Puma as the app server
+gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -30,6 +31,8 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '~> 4.7', '>= 4.7.3'
+# Use bootstrap to make responsive pages
+gem 'bootstrap', '~> 4.5', '>= 4.5.3'
 gem 'font-awesome-rails'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'simple_form'
