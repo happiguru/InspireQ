@@ -36,6 +36,7 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'bulma-rails', '~> 0.9.0'
 gem 'font-awesome-rails'
 gem 'gravatar_image_tag', '~> 1.2'
+gem 'binding_of_caller'
 gem 'simple_form'
 
 group :development, :test do
