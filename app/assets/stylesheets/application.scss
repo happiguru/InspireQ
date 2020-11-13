@@ -19,6 +19,7 @@
 .side-panel {
   width: 17%;
   background-color: hsl(0, 0%, 21%);
+
   a {
     color: white;
   }
@@ -58,10 +59,6 @@
   color: white;
 }
 
-.panel {
-  box-shadow: 0;
-}
-
 a:hover {
   background-color: white;
 }
@@ -95,16 +92,11 @@ a:hover {
   color: #4a4a4a;
   display: block;
   padding: 0.7rem;
-  min-width: fit-content;
 
   .quote-icon {
     display: flex;
     flex-direction: row-reverse;
   }
-}
-
-.justify {
-  width: -webkit-fill-available;
 }
 
 .quote-org {
@@ -167,10 +159,6 @@ a:hover {
   height: 100%;
 }
 
-.h-10 {
-  height: -webkit-fill-available;
-}
-
 .lef {
   text-align: left;
 }
@@ -195,6 +183,5 @@ a:hover {
     border: 1px solid rgb(189, 186, 186);
     display: flex;
     justify-content: space-evenly;
-    width: -webkit-fill-available;
   }
 }
