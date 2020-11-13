@@ -13,14 +13,12 @@
  *= require_tree .
  *= require_self
  */
- 
- @import "bulma";
- @import "font-awesome";
+@import "bulma";
+@import "font-awesome";
 
  .side-panel {
     width: 17%;
     background-color: hsl(0, 0%, 21%);
-  
     a {
       color: white;
     }
