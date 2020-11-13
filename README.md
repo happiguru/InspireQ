@@ -3,6 +3,8 @@
 # Twitter Redesign Application (Inspirational Quotes App)
 Inspirational Quotes Application built with Ruby on Rails
 
+![Video Link](https://youtu.be/kt81KXcErwM)
+
 ![](images/Screenshot_2020-11-13_21-52-55.png)
 
 ![](images/Screenshot_2020-11-13_21-54-22.png)
