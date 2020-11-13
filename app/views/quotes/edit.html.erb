@@ -1,21 +1,16 @@
-<div class="section">
-    <div class="container">
-        <div class="column is-centered">
-            <div class="column is-half">
-                <h1 class="title">Editing Quote</h1>
-                <%=  render 'form', quote: @quote %>
-            </div>
-        </div>
-    </div>
-</div>
-<nav class="navbar is-fixed-bottom">
-    <div class="navbar-menu">
-        <div class="navbar-item">
-            <div class="filed is-grouped">
-                <p class="control">
-                    <%= link_to 'Cancel', quotes_path, class: "button is-dark" %>
-                </p>
-            </div>
-        </div>
-    </div>
-</nav>
+<div class="py-2">
+     <article class="media box">
+         <figure class="media-left">
+             <p class="image is-64x64">
+                 <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.fullname) %>
+
+             </p>
+         </figure>
+         <div class="media-content">
+             <%= render 'form' %>
+         </div>
+     </article>
+     <%= link_to 'Show', @quote %> |
+     <%= link_to 'Back', quotes_path %>
+
+ </div>

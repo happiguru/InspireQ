@@ -1,15 +1,36 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: %i[index show]
+  before_action :authenticate_user!
 
   # GET /quotes
   def index
-    @quotes = Quote.all.order('created_at DESC')
-    @quote = Quote.new
+    @likes = Like.all
+    @quotes = Quote.all.order('created_at DESC').includes(%i[user replies])
+    @users = User.order('created_at DESC').includes(%i[followed_users followers replies quotes])
+    if current_user
+      @quote = current_user.quotes.new
+      @not_followed = User.all.order('created_at DESC') - current_user.followed_users
+      @not_followed.delete(current_user)
+
+      ids = current_user.followed_users.ids
+      ids << current_user.id
+      @followed_and_user_quotes = @quotes.where(author_id: ids)
+
+    end
   end
 
   # GET /quotes/1
-  def show; end
+  def show
+    @likes = Like.all
+    @users = User.all
+    @quotes = Quote.all.order('created_at DESC')
+    if current_user
+      @quote = current_user.quotes.new
+      @not_followed = User.all.order('created_at DESC') - current_user.followed_users
+      @not_followed.delete(current_user)
+      @followed_and_user_quotes = @quotes.where(author_id: current_user.followed_users.pluck(:id))
+    end
+  end
 
   # GET /quotes/new
   def new
@@ -58,6 +79,6 @@ class QuotesController < ApplicationController
   
     # Only allow a list of trusted parameters through.
     def quote_params
-      params.require(:quote).permit(:quote)
+      params.require(:quote).permit(:content)
     end
 end
