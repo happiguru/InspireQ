@@ -14,19 +14,19 @@ module QuotesHelper
   end
 
   def edit_delete_own_quote
-    if current_user?(@quote.user)
+    return unless current_user?(@quote.user)
 
-      link_to edit_quote_path(@quote), class: 'level-item' do
-        raw("  <span class='icon'>
+    link_to edit_quote_path(@quote), class: 'level-item' do
+      raw("  <span class='icon'>
             <i class='fa fa-pencil' aria-hidden='true'></i>
         </span>")
-      end
+    end
 
-      link_to @quote, method: :delete, data: { confirm: 'Are you sure you want to delete this quote?' }, class: 'level-item' do
-        raw("  <span class='icon'>
+    link_to @quote, method: :delete, data: { confirm: 'Are you sure you want to delete this quote?' },
+                    class: 'level-item' do
+      raw("  <span class='icon'>
             <i class='fa fa-trash-o' aria-hidden='true'></i>
         </span>")
-      end
     end
   end
 end

@@ -7,16 +7,15 @@ class QuotesController < ApplicationController
     @likes = Like.all
     @quotes = Quote.all.order('created_at DESC').includes(%i[user replies])
     @users = User.order('created_at DESC').includes(%i[followed_users followers replies quotes])
-    if current_user
-      @quote = current_user.quotes.new
-      @not_followed = User.all.order('created_at DESC') - current_user.followed_users
-      @not_followed.delete(current_user)
+    return unless current_user
 
-      ids = current_user.followed_users.ids
-      ids << current_user.id
-      @followed_and_user_quotes = @quotes.where(author_id: ids)
+    @quote = current_user.quotes.new
+    @not_followed = User.all.order('created_at DESC') - current_user.followed_users
+    @not_followed.delete(current_user)
 
-    end
+    ids = current_user.followed_users.ids
+    ids << current_user.id
+    @followed_and_user_quotes = @quotes.where(author_id: ids)
   end
 
   # GET /quotes/1
@@ -24,12 +23,12 @@ class QuotesController < ApplicationController
     @likes = Like.all
     @users = User.all
     @quotes = Quote.all.order('created_at DESC')
-    if current_user
-      @quote = current_user.quotes.new
-      @not_followed = User.all.order('created_at DESC') - current_user.followed_users
-      @not_followed.delete(current_user)
-      @followed_and_user_quotes = @quotes.where(author_id: current_user.followed_users.pluck(:id))
-    end
+    return unless current_user
+
+    @quote = current_user.quotes.new
+    @not_followed = User.all.order('created_at DESC') - current_user.followed_users
+    @not_followed.delete(current_user)
+    @followed_and_user_quotes = @quotes.where(author_id: current_user.followed_users.pluck(:id))
   end
 
   # GET /quotes/new

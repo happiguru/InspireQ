@@ -8,12 +8,12 @@ module UserHelper
   end
 
   def follow_unfollow
-    unless current_user?(@user)
-      if current_user.following?(@user)
-        render 'unfollow'
-      else
-        render 'follow'
-      end
+    return if current_user?(@user)
+
+    if current_user.following?(@user)
+      render 'unfollow'
+    else
+      render 'follow'
     end
   end
 

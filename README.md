@@ -7,8 +7,6 @@ Inspirational Quotes Application built with Ruby on Rails
 
 ![](images/Screenshot_2020-11-13_21-52-55.png)
 
-![](images/Screenshot_2020-11-13_21-54-22.png)
-
 ![](images/Screenshot_2020-11-13_21-54-50.png)
 
 In this project we built an exclusive Inspirational Quotes App where users post inspirational quotes, the quotes can be liked, and users can be followed.
