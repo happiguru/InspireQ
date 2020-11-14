@@ -5,7 +5,7 @@ Inspirational Quotes Application built with Ruby on Rails
 
 ## Video Presentation of the project
 
-[Video Presentation Link] (https://youtu.be/kt81KXcErwM)
+[Video Presentation Link](https://youtu.be/kt81KXcErwM)
 
 ![](images/Screenshot_2020-11-13_21-52-55.png)
 
@@ -87,4 +87,4 @@ This project is [MIT](lic.url) licensed.
 - GitHub
 - TheOdinProject
 - Ruby on Rails
-- Gregoire Vella on Behance (https://www.behance.net/gallery/14286087/Twitter-Redesign-of-UI-details)
+- Gregoire Vella on Behance [](https://www.behance.net/gallery/14286087/Twitter-Redesign-of-UI-details)
