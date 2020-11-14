@@ -23,6 +23,9 @@ This project was built with:
 - Devise
 
 ## 🛠 Getting Started
+
+## Live View
+[Launch](https://enigmatic-island-93425.herokuapp.com/users/sign_in)
 ## Install 
 In order to run, you need to install Ruby in your computer. For windows you can go to [Ruby installer](https://rubyinstaller.org/) and for MAC and LINUX you can go to [Ruby official site](https://www.ruby-lang.org/en/downloads/) for intructions on how to intall it.
 
