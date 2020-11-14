@@ -6,6 +6,7 @@ Inspirational Quotes Application built with Ruby on Rails
 ## Video Presentation of the project
 
 [Video Link] (https://youtu.be/kt81KXcErwM)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kt81KXcErwM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![](images/Screenshot_2020-11-13_21-52-55.png)
 
