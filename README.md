@@ -82,3 +82,11 @@ Feel free to check the [issues page](https://github.com/happiguru/twitter-redesi
 
 ## 📝 License
 This project is [MIT](lic.url) licensed.
+
+## Acknowledgments
+
+- Microverse
+- GitHub
+- TheOdinProject
+- Ruby on Rails
+- Gregoire Vella on Behance (https://www.behance.net/gallery/14286087/Twitter-Redesign-of-UI-details)
