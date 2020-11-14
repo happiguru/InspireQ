@@ -5,22 +5,19 @@ Inspirational Quotes Application built with Ruby on Rails
 
 ## Video Presentation of the project
 
-[Video Link] (https://youtu.be/kt81KXcErwM)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kt81KXcErwM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Video Presentation Link] (https://youtu.be/kt81KXcErwM)
 
 ![](images/Screenshot_2020-11-13_21-52-55.png)
-
-![](images/Screenshot_2020-11-13_21-54-50.png)
 
 In this project we built an exclusive Inspirational Quotes App where users post inspirational quotes, the quotes can be liked, and users can be followed.
 
 ### Usage
 
-Once you open the link on your browser, you are asked to login in order to be able to see your tweets and your friends' tweets.
+Once you open the link on your browser, you are asked to login in order to be able to see your quotes and your friends' quotes.
 
 By clicking the "Sign Up" button you are able to create your account after you fill in the necessary fields.
 
-You now can create a tweet and share whatever you want with your friends! If you do not have friends for now, follow the other users. Networking is everything!
+You now can create a quote and share whatever you want with your friends! If you do not have friends for now, follow the other users. Networking is everything!
 
 Moreover, you are able to see all the users and a your profile through the 'Discover' and 'Profile' items at the left panel respectively!
 
