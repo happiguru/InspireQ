@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+<div class="py-2">
+    <article class="media box">
+        <figure class="media-left">
+            <p class="image is-64x64">
+                <%= gravatar_image_tag(@quote.user.email, size: 64, alt: @quote.user.fullname) %>
+            </p>
+        </figure>
+        <div class="content quote-org justify">
+            <div>
+                <%= link_to @quote.user.fullname, user_path(@quote.user), class: 'post-author' %><br>
+                <small>@<%= link_to @quote.user.username, user_path(@quote.user), class: 'post-author' %></small><br />
+
+                <p><%= @quote.content %></p>
+            </div>
+            <div class="quote-icon">
+               
+                <%= edit_delete_own_quote %>                               
+            </div>
+        </div>
+</div>
+
+<div class="media-content">
+
+    <nav class="block">
+        <div class='post-comments-section pl-4'>
+                <%= render partial: 'replies/reply', collection: @quote.replies %>
+
+                <%= form_for(@quote.replies.new, url: quote_replies_path(@quote)) do |form| %>
+                <div class="reply-input"><%= form.text_field :content, label: "Quote about it", input_html: { class: "input"},
+                                                  wrapper: false, label_html: {class: "label"}, placeholder: "Reply this quote.",
+                                                  autofocus: true %></div>
+                <%= form.button :submit, class: "button is-info my-2" %>
+                <% end %>
+               <%= link_to 'Show', @quote %> |
+          <%= link_to 'Back', quotes_path %> </div>
+
+    </nav>
+</div>
+
+</article>
+
+</div>

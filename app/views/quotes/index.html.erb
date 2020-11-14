@@ -1,0 +1,25 @@
+<div class="is-flex h-10">
+ 
+ <div class="column px-5">
+
+    <div class="py-2">
+        <article class="media box">
+            <figure class="media-left">
+                <p class="image is-64x64">
+                    <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.fullname) %>
+
+                </p>
+            </figure>
+            <div class="media-content">
+                <%= render 'form' %>
+            </div>
+        </article>
+    </div>
+    
+<%= render 'quotes/quote' %>
+
+</div>
+  
+     
+ <%= render 'who_to_follow' %> 
+    </div>

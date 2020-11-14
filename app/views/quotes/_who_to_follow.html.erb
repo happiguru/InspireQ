@@ -1,0 +1,22 @@
+<div class="wtf-panel px-3 py-5">
+    <nav class="">
+        <p class="wtf-heading pb-4 mb-4">WHO TO FOLLOW</p>
+
+        <% @not_followed.each do |user| %>
+        <article class="wtf-item">
+            <div class="justify column">
+                <div class="is-flex">
+                    <figure class="image is-32x32 thumb">
+                        <%= gravatar_image_tag(user.email, size: 64, alt: user.fullname) %>
+                    </figure>
+                    <div class="ml-2">
+                        <p class="fullname"> <%= link_to user.fullname, user_path(user) %><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        <%end %>
+    </nav>
+</div>
