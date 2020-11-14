@@ -1,0 +1,30 @@
+<div class="column px-0">
+    <nav class="panel pl-3">
+       
+        <div class="prof-pic">
+         <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.fullname) %>
+        
+        <%= link_to 'PROFILE', user_path(current_user), class: "navbar-item" %>   </div>
+        <nav class="level is-mobile">
+
+  <div class="panel-block has-text-centered">
+    <div>
+      <p class="heading">Following</p>
+      <p class="panel-block"><%= current_user.followed_users.count  %></p>
+    </div>
+  </div>
+  <div class="panel-block has-text-centered">
+    <div>
+      <p class="heading">Followers</p>
+      <p class="panel-block"><%= current_user.followers.count  %></p>
+    </div>
+  </div>
+
+</nav>
+<div class="side-links">
+        <a href="#" ><%= link_to 'HOME', root_path, class: "navbar-item" %></a>
+        <a href="#" ><%= link_to 'CONNECT', users_path, class: "navbar-item" %></a>
+
+        </div>
+    </nav>
+</div>

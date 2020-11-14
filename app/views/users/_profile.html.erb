@@ -1,0 +1,49 @@
+<div class="wtf-panel py-5">
+    <nav class="">
+        <article class=" py-2 wtf">
+            <div class="media-content ">
+                    <figure class=" thumb">
+                    <%= gravatar_image_tag(@user.email, size: 64, alt: @user.fullname) %>
+                </figure>
+                <p><%= @user.fullname  %></p>
+                <p><small>@<%= @user.username  %></small></p>
+                <%= follow_unfollow %>
+            </div>
+
+            <div class="wtf-f media-content mt-2">
+                <div class="stat">
+                    <p class="has-text-centered	 "><%= @user.quotes.count  %></p>
+                    <p class="heading">Quotes</p>
+                </div>
+                <div class="stat">
+                 <p class=" has-text-centered	"><%= @user.followed_users.count  %></p>
+                    <p class="heading">Following</p>
+                   
+                </div>
+                <div class="stat">
+                    <p class="has-text-centered	"><%= @user.followers.count  %></p>
+                    <p class="heading">Followers</p>
+                </div>
+            </div>
+
+            <div class="followed mt-2">
+                Followed by:<br>
+                <% @user.followers.each do |user| %>
+                <br>
+                 <div class="is-flex">
+                <figure class="image is-32x32 thumb">
+                    <%= gravatar_image_tag(user.email, size: 64, alt: user.fullname) %>
+                </figure>
+                <div class="ml-2 lef">
+                    <p class="fullname"> <%= link_to user.fullname, user_path(user) %><br>
+                    </p>
+                    <p class="greyy">@<%= link_to user.username, user_path(user) %><br>
+                    </p>
+                </div>
+                </div>
+            </div>
+                <%end %>
+            </div>
+        </article>
+    </nav>
+</div>

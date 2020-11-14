@@ -1,0 +1,16 @@
+<div class="py-2">
+     <article class="media box">
+         <figure class="media-left">
+             <p class="image is-64x64">
+                 <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.fullname) %>
+
+             </p>
+         </figure>
+         <div class="media-content">
+             <%= render 'form' %>
+         </div>
+     </article>
+     <%= link_to 'Show', root_path %> |
+     <%= link_to 'Back', quotes_path %>
+
+ </div>

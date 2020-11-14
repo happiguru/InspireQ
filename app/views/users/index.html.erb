@@ -1,0 +1,28 @@
+<section class="users-section">
+
+</section>
+<div class="box">
+
+    <% @users.each do |user| %>
+
+    <article class="media">
+        <div class="media-left">
+            <figure class="image is-64x64">
+                <%= gravatar_image_tag(user.username, size: 64, alt: user.username) %>
+            </figure>
+        </div>
+
+        <div class="media-content">
+            <div class="content">
+
+                <%= link_to user.fullname, user_path(user), class: 'post-author' %><br>
+                <small><%= link_to user.username, user_path(user), class: 'post-author' %></small><br />
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <% end %>
+</div>

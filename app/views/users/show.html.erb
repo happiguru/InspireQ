@@ -1,0 +1,22 @@
+<div class="columns">
+
+    <div class="w-1 pl-3">
+
+        <section class="users-section">
+            <div class="media-left mr-0 pt-3">
+                <figure class="image profile-pic">
+                    <%= gravatar_image_tag(@user.email, size: 64, alt: @user.fullname) %>
+                </figure>
+            </div>
+            <article class="timeline">
+                <ul class="posts">
+                    <h3 class="box title mb-0 no-border">All Quotes</h3>
+                    <ul class="posts">
+                        <%= user_feed %>
+                    </ul>
+            </article>
+        </section>
+    </div>
+    <%= render 'profile' %>
+
+</div>

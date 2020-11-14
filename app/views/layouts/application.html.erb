@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inspire Someone</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+
+    <%= flash_notice %>
+    <%= flash_alert %>
+
+    <%= side_panel_on %>
+
+    <div class='column px-0 py-0'>
+        <nav class="navbar is-info">
+            <div class="navbar-brand">
+
+                <div class="navbar-burger burger" data-target="navbarExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="navbarExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field is-grouped mb-0 px-2">
+                         <%= nav_bar %>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <%= yield %>
+    </div>
+    </div>
+  </body>
+  
+</html>
