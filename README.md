@@ -5,7 +5,7 @@ Inspirational Quotes Application built with Ruby on Rails
 
 ## Video Presentation of the project
 
-[Video Presentation Link] (https://www.loom.com/share/7e75f0358a9047e783ded64276d36b44)
+[Video Presentation Link](https://www.loom.com/share/7e75f0358a9047e783ded64276d36b44)
 
 ![](images/Screenshot_2020-11-13_21-52-55.png)
 
