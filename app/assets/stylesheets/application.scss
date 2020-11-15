@@ -16,9 +16,18 @@
 @import "bulma";
 @import "font-awesome";
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
 .side-panel {
   width: 17%;
   background-color: hsl(0, 0%, 21%);
+  height: 100vh;
 
   a {
     color: white;

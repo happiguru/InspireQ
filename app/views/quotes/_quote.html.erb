@@ -9,7 +9,7 @@
           </div>
 
           <div class="media-content">
-              <div class="content tweet-org mb-0">
+              <div class="content quote-org mb-0">
                   <div class="fullname">
                       <%= link_to quote.user.fullname, user_path(quote.user), class: 'fullname' %><br>
                       <small>@<%= link_to quote.user.username, user_path(quote.user), class: 'post-author' %></small><br />
@@ -22,7 +22,7 @@
                           <%= like_or_dislike_btn(quote) %></div>
 
                   </div>
-                  <div class="tweet-icon is-flex">
+                  <div class="quote-icon is-flex">
                       <div class="mt-3">
                          
                           <% if current_user==quote.user %>
