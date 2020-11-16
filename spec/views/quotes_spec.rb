@@ -21,7 +21,7 @@ describe 'the quoting process', type: :feature do
     @relationship = Relationship.create!({ follower_id: @test_user1_follow.id,
                                            followed_id: @test_user1.id })
 
-    @tweet = Quote.create!({ author_id: @test_user1_follow.id,
+    @quote= Quote.create!({ author_id: @test_user1_follow.id,
                              content: 'Test post from Chuck', id: 1 })
     visit 'users/sign_in'
     fill_in 'Login', with: @test_user1.email
