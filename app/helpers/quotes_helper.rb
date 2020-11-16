@@ -32,12 +32,11 @@ module QuotesHelper
   
   def delete_own_quote(quote)
     return unless current_user == quote.user
-
     link_to quote, method: :delete, data: { confirm: 'Are you sure you want to delete this quote?' },
                    class: 'level-item delet' do
-      raw(" <span class='icon'>
-        <i class='fa fa-trash-o'  aria-hidden='true'></i>
-      </span>")
+       raw(" <span class='icon'>
+            <i class='fa fa-trash-o'  aria-hidden='true'></i>
+        </span>")
     end
   end
 end
