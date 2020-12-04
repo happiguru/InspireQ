@@ -1,7 +1,22 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Twitter Redesign Application (Inspirational Quotes App)
+# InspireQ (Inspirational Quotes App)
 Inspirational Quotes Application built with Ruby on Rails
+Inspire (Inspirational Quotes App)
+Nov 2020 – Present
+
+Project descriptionInspire is a Social Media Platform that offers its user the ability to motivate their followers through the use of inspirational quotes.
+Users have the ability to:
+
+- post new inspirational quotes
+- make friends and get followers
+- reply to quotes of other following users
+- share ideas (like and unlike, comment)
+- update and delete quotes
+- follow and unfollow users
+- make friends and unfriends users
+
+This project was achieved using the following: Ruby on Rails, HTML5, Bootstrap, CSS3 and JavaScript, SASS.
 
 ## Video Presentation of the project
 
