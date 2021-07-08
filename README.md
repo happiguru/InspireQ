@@ -1,4 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=happiguru/InspireQ)
 
 # InspireQ (Inspirational Quotes App)
 Inspirational Quotes Application built with Ruby on Rails
