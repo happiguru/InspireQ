@@ -6,7 +6,8 @@
 The concept behind InspireQ is to create an inspirational quotation software where users may exchange "Inspirational Quotes" with other members and receive comments.
 Ruby on Rails, JavaScript, HTML5, and CSS3 are the technologies used in the program. It also makes use of Test Driven Development techniques.
 
-Project descriptionInspire is a Social Media Platform that offers its user the ability to motivate their followers through the use of inspirational quotes.
+## Project description
+InspireQ is also a Social Media Platform that offers its user the ability to motivate their followers through the use of inspirational quotes.
 Users have the ability to:
 
 - post new inspirational quotes
@@ -25,17 +26,17 @@ This project was achieved using the following: Ruby on Rails, HTML5, Bootstrap, 
 
 ![](images/Screenshot_2020-11-13_21-52-55.png)
 
-In this project we built an exclusive Inspirational Quotes App where users post inspirational quotes, the quotes can be liked, and users can be followed.
+I created a special Inspiring Quotations App for this project, where users may submit inspirational quotes, like them, and follow them.
 
 ### Usage
 
-Once you open the link on your browser, you are asked to login in order to be able to see your quotes and your friends' quotes.
+When you visit the link in your browser, you'll be asked to log in before you can see your quotes and those of your friends.
 
-By clicking the "Sign Up" button you are able to create your account after you fill in the necessary fields.
+You may create an account by clicking the "Sign Up" button and filling in the required fields.
 
-You now can create a quote and share whatever you want with your friends! If you do not have friends for now, follow the other users. Networking is everything!
+You can now write your own quotation and share it with your friends! For the time being, if you don't have any friends, you can simply follow the other users. It's all about networking!
 
-Moreover, you are able to see all the users and a your profile through the 'Discover' and 'Profile' items at the left panel respectively!
+Furthermore, the 'Discover' and 'Profile' items in the left panel allow you to see all users as well as your own profile!
 
 ## Built With
 
@@ -83,7 +84,7 @@ To run the tests:
 This project has been deployed on Heroku using the `Heroku CLI` and a continuous deployment pipeline has been setup between Heroku and GitHub.
 
 ## Instructions
-Once inside the application, you have to create an account since you are a new user so as to be able to enjoy all that the web app has to offer. Once you've created the application, you can use the navigation links to navigate anywhere within the page.
+Once within the app, you'll need to register an account because you're a new user and want to take advantage of everything the web app has to offer. After you've finished creating the application, you can use the navigation links to move around the page.
 
 ## ✒️ Authors
 
