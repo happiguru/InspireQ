@@ -1,11 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=happiguru/InspireQ)
 
-# InspireQ (Inspirational Quotes App)
-Inspirational Quotes Application built with Ruby on Rails
+## InspireQ (Inspirational Quotes App)
+
 The concept behind InspireQ is to create an inspirational quotation software where users may exchange "Inspirational Quotes" with other members and receive comments.
 Ruby on Rails, JavaScript, HTML5, and CSS3 are the technologies used in the program. It also makes use of Test Driven Development techniques.
-
 
 Project descriptionInspire is a Social Media Platform that offers its user the ability to motivate their followers through the use of inspirational quotes.
 Users have the ability to:
